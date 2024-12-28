@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/deslogo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/design.css">
+  <link rel="stylesheet" href="CSS/design-short__pages.css">
+  <link rel="stylesheet" href="fonts/Exo2__ProstoOne.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Prosto+One&display=swap" rel="stylesheet">
+  <script src="JAVA/design.js" defer></script>
+  <script src="JAVA/support.js" defer></script>
+  <title>LDesignCo</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand logo-img" href="index.html"><img src="img/deslogo.png" alt="..."></a>
+            <a class="navbar-brand text-center-1" href="">
+              <h1>Welcome to LDesignCo</h1>
+              <p class="text-center">Стиль, который говорит за вас</p>
+            </a>
+            <button class="navbar-toggler button-navpan" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Панель управления</h5>
+                <button type="button" class="btn btn-outline-secondary">Вход</button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Главная страница</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="historyofcompany.html">О нас</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="services.html">Услуги</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="workexamples.html">Примеры работ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="discounts.html">Скидки и спец предложения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ (Часто задаваемые вопросы)</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="contactLink" class="nav-link" href="#">Свяжись с нами</a>
+                  </li>
+                  <p class="social-media"><a href="#"><img class="animation"
+                        src="https://upload.wikimedia.org/wikipedia/commons/9/9a/VK_Logo.png"
+                        style="max-width: 50px; margin-right: 15px;" alt=""></a>
+                    <a href="#"><img class="animation"
+                        src="https://static-00.iconduck.com/assets.00/telegram-icon-512x512-06dzxbpj.png"
+                        style="max-width: 50px; margin-left: 15px;" alt=""></a>
+                  </p>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Поиск..." aria-label="Search">
+                  <button class="btn btn-success" type="submit">Поиск</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div class="container-fluid ">
+          <div class="row">
+            <div class="col-lg-1">
+            </div>
+            <div class="col-lg-8 col-md-12 col-12 mt-3">
+              <div class="row">
+                <div class="card text-center discount cont-width col-lg-11">
+                  <div class="card-header">
+                    Спец предложение недели
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Лови вдохновение!</h5>
+                    <p class="card-text">Получите скидку 20% на все заказы в эту неделю с кодом 'INSPIRE20'.</p>
+                    <a href="#" class="btn btn-secondary">Получить скидку</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                    До конца акции осталось 2 дня
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 mt-3 ">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-6 col-12">
+                      <div class="row">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                              aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                              aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                              aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                              <img src="img/work-1.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                              </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                              <img src="img/work-2.png" class="d-block w-100" style="max-height: 500px;" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                              </div>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/work-3.png" class="d-block w-100 " style="max-height: 500px;" alt="...">
+                              <div class="carousel-caption d-none d-md-block">
+                              </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                      <div class="row">
+                        <div class="examples">
+                          <p>Примеры работ</p>
+                          <p>Изысканный стиль, непревзойденное качество: взгляните на наши работы и почувствуйте гармонию
+                            формы и функциональности. Каждый проект – это мастерство и внимание к деталям, которые делают
+                            ваше пространство уникальным. <a class="see-more" href="workexamples.html">Смотреть
+                              больше>>></a></p>
+                        </div>
+                        <div class="info">
+                          <p>Коротко о нас</p>
+                          <p>LDesignCo - это уникальное место, где каждая задумка превращается в удивительное творение. Наша
+                            команда занимается разработкой креативных и эффективных решений в области дизайна, включая
+                            создание логотипов, дизайн веб-сайтов, брендинг, упаковки продуктов, графический дизайн и многое
+                            другое. Мы помогаем компаниям и брендам выделиться на рынке и создать уникальный образ, который
+                            привлекает внимание и завоевывает доверие клиентов. <a class="see-more"
+                              href="historyofcompany.html">Узнать
+                              больше>>></a></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-11 col-md-12 mt-3">
+                      <div class="row">
+                        <div class="alert alert-success winner" role="alert">
+                          <h4 class="alert-heading">Везунчик дня - пользователь с ником "JOJO"!</h4>
+                          <p>Поздравляем тебя с этим особенным статусом! Мы хотим выразить наше восхищение и благодарность
+                            за то, что выбрал наш сайт. В честь этого замечательного события мы предоставляем тебе
+                            специальную скидку 5% на все категории товаров! Надеемся, что ты найдешь что-то особенное и
+                            приятное для себя. Пользуйся нашими услугами с удовольствием, и пусть удача всегда сопутствует
+                            тебе! С наилучшими пожеланиями, команда LDesignCo.</p>
+                          <hr>
+                          <p class="mb-0">Любой зарегистрированный на сайте пользователь может попасть сюда. *Акция
+                            действует 1 день. *Скидка начисляется автоматически. *По всем вопросам писать поддержке. <a
+                              href=""></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 sales-30 ">
+              <div class="row">
+                <div class="card">
+                  <a href="discounts.html"><img src="https://pngicon.ru/file/uploads/skidki.png" class="card-img-top"
+                      alt="..."></a>
+                  <div class="card-body main__card-body">
+                    <h5 class="card-title">Месяц скидок</h5>
+                    <p class="card-text">Дорогие друзья!
+                      Приготовьтесь к невероятному месяцу, полному удивительных предложений и эксклюзивных скидок! Мы рады
+                      объявить о начале нашего Месяца Скидок, который принесет вам выгодные возможности и уникальные
+                      предложения на все наши услуги.</p>
+                  </div>
+                  <ul class="list-group list-group-flush changes">
+                    <li class="list-group-item">Неделя 1: Скидка для Новых Клиентов
+                      Новые клиенты получают скидку 15% на свой первый заказ!</li>
+                    <li class="list-group-item">Неделя 2: День Дизайна
+                      На этот день все услуги дизайна предоставляются со скидкой 20%!</li>
+                    <li class="list-group-item">Неделя 3: Семейная Скидка
+                      Закажите две и более услуги в одном заказе и получите скидку 25% на весь заказ!</li>
+                    <li class="list-group-item">Неделя 4: Время Обновлений
+                      Получите скидку 30% на обновление любого проекта, который был ранее завершен нашей компанией!</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="discounts.html" class="card-link">Перейти</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-speed="1.2" class="container-fluid container-fluid__service">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12 mt-4 mb-4">
+              <div class="row">
+                <div class="services__container">
+                  <div data-lag=".85" class="service"><a href="services.html"><img src="img/услуга1.jpg" alt="">
+                      <p>Логотипы и брендирование</p>
+                    </a></div>
+                  <div data-lag=".7" class="service"><a href="services.html"><img src="img/услуга2.jpg" alt="">
+                      <p>Графический дизайн для веб-сайтов</p>
+                    </a></div>
+                  <div data-lag=".5" class="service"><a href="services.html"><img src="img/услуга3.jpg" alt="">
+                      <p>Дизайн упаковки</p>
+                    </a></div>
+                  <div data-lag=".5" class="service"><a href="services.html"><img src="img/услуга4.jpg" alt="">
+                      <p>Графический дизайн для социальных сетей</p>
+                    </a></div>
+                  <div data-lag=".7" class="service"><a href="services.html"><img src="img/услуга5.jpg" alt="">
+                      <p>Иллюстрации и арт-работы</p>
+                    </a></div>
+                  <div data-lag=".85" class="service"><a href="services.html"><img src="img/услуга6.jpg" alt="">
+                      <p>Инфографика и визуализация данных</p>
+                    </a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="q__container">
+          <div class="short__q__container">
+            <div class="head__txt">
+              <h4>Вопросы от пользователей (клиентов) сайта |</h4>
+            </div>
+            <div class="q__main__container">
+              <div class="q__face">
+                <img src="https://cdn-icons-png.flaticon.com/512/76/76818.png" alt="">
+              </div>
+              <div class="user__cards">
+                <div class="user__card user__card__1">
+                  <a href="FAQ.html">
+                    <div class="icon__nameuser">
+                      <img class="user__face"
+                        src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181661.png"
+                        alt="">
+                      <h5>Николай В. </h5>
+                    </div>
+                    <div class="user__q">
+                      <p>Сколько времени занимает разработка проекта?</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="user__card user__card__2">
+                  <a href="FAQ.html">
+                    <div class="icon__nameuser">
+                      <img class="user__face"
+                        src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181660.png"
+                        alt="">
+                      <h5>Владислав С. </h5>
+                    </div>
+                    <div class="user__q">
+                      <p>У вас есть оплата через SberPay?</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="user__card user__card__3">
+                  <a href="FAQ.html">
+                    <div class="icon__nameuser">
+                      <img class="user__face"
+                        src="https://cdn.icon-icons.com/icons2/2859/PNG/512/avatar_face_man_boy_male_profile_smiley_happy_people_icon_181657.png"
+                        alt="">
+                      <h5>Никита О. </h5>
+                    </div>
+                    <div class="user__q">
+                      <p>Чем вы занимаетесь?</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dignity__head">
+          <h4>Причины пользоваться именно нашими услугами:</h4>
+        </div>
+        <div class="dignity__container">
+          <div class="dignity-1-2-3">
+            <div class="dignity dignity__1">
+              <p><span class="dignity__span">Клиентоориентированность:</span> Мы полностью фокусируемся на потребностях и
+                ожиданиях наших клиентов, стремясь предоставить им оптимальные решения и высокий уровень сервиса.</p>
+            </div>
+            <div class="dignity dignity__2">
+              <p><span class="dignity__span">Гибкость и адаптивность:</span> Мы готовы адаптироваться к изменяющимся
+                потребностям и требованиям наших клиентов, предлагая гибкие и индивидуальные решения для каждого проекта.
+              </p>
+            </div>
+            <div class="dignity dignity__3">
+              <p><span class="dignity__span">Стратегическое партнерство:</span> Мы не просто исполнители, мы стремимся
+                стать стратегическими партнерами для наших клиентов, предлагая им комплексные решения и совместно
+                разрабатывая стратегии развития.</p>
+            </div>
+          </div>
+          <div class="dignity-4-5-6">
+            <div class="dignity dignity__4">
+              <p><span class="dignity__span">Постоянное совершенствование:</span> Мы постоянно стремимся к улучшению наших
+                процессов и услуг, исследуя лучшие практики, проводя обучение и развивая нашу команду, чтобы быть на шаг
+                впереди в нашей отрасли.</p>
+            </div>
+            <div class="dignity dignity__5">
+              <p><span class="dignity__span">Прозрачность:</span> Мы придерживаемся политики открытости и прозрачности во
+                всех наших деловых отношениях. Мы всегда готовы предоставить подробную информацию о наших услугах, ценах и
+                условиях сотрудничества.</p>
+            </div>
+            <div class="dignity dignity__6">
+              <p><span class="dignity__span">Безопасность и защита платежей:</span> Мы придаем высший приоритет
+                безопасности платежей наших клиентов. Наша компания использует передовые технологии шифрования и защиты
+                данных, чтобы обеспечить конфиденциальность и безопасность финансовых транзакций. Мы сотрудничаем с
+                ведущими провайдерами платежных услуг, чтобы гарантировать надежность и защиту каждой транзакции, делая
+                оплату удобной и безопасной для наших клиентов.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="col-lg-12 col-md-12 mt-3">
+          <div class="row">
+            <div class="container-fluid footer-txt">
+              <hr>
+              <p><a href="#"><img class="animation" src="https://upload.wikimedia.org/wikipedia/commons/9/9a/VK_Logo.png"
+                style="max-width: 50px; margin-right: 15px;" alt=""></a>
+                <a href="#"><img class="animation"
+                  src="https://static-00.iconduck.com/assets.00/telegram-icon-512x512-06dzxbpj.png"
+                  style="max-width: 50px; margin-left: 15px;" alt=""></a>
+                </p>
+                <p>All rights reserved. <br>2024</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+  </div>
+    
+  <div id="contactFormModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Свяжитесь с нами</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" id="contactForm">
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="nameInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="emailInput" class="form-label">Email</label>
+              <input type="email" class="form-control" id="emailInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="idInput" class="form-label">ID</label>
+              <input type="text" class="form-control" id="idInput" required>
+            </div>
+            <div class="mb-3">
+              <label for="descriptionInput" class="form-label">Описание проблемы</label>
+              <textarea class="form-control" id="descriptionInput" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-support">
+    <button class="chat-toggle" onclick="toggleChat()">Поддержка</button>
+    <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+        <h3>Чат с поддержкой</h3>
+        <button class="close-chat" onclick="toggleChat()">×</button>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <!-- Здесь будут сообщения -->
+      </div>
+      <div class="chat-input">
+        <textarea id="messageInput" placeholder="Введите ваше сообщение..."></textarea>
+        <button onclick="sendMessage()">Отправить</button>
+      </div>
+    </div>
+  </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="toast-header">
+          <img src="https://cdn-icons-png.flaticon.com/512/3662/3662817.png" class="rounded me-2" alt="...">
+          <strong class="me-auto">Контакты автора сайта</strong>
+          <small>1s ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          VK - https://vk.com/ogyr4ikxxx <br>
+          Tg - @lastdayzzz <br>
+          *все остальные данные на сайте вымышлены
+        </div>
+      </div>
+    </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <script src="./scripts/ScrollTrigger.min.js"></script>
+
+  <script src="./scripts/ScrollSmoother.min.js"></script>
+
+  <script src="JAVA/app.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

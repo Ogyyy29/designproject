@@ -1,0 +1,100 @@
+.card{
+  margin: 1em;
+  padding-top: 0.5em;
+  box-shadow: 7px 11px 18px 4px #000000;
+  width: 400px !important; 
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.modal-backdrop {
+  --bs-backdrop-zindex: none;
+}
+
+input:out-of-range{
+  border: 1px solid red;
+}
+
+.modal-content{
+  background-image: url('https://bewell-group.ru/assets/images/demo/payment-online.svg');
+}
+
+.btn-outline-secondary{
+  border: none;
+}
+
+.payment:hover{
+  animation: myAnim 2s ease 1s infinite normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0.8;
+		transform: scale(0.2);
+	}
+
+	80% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(2.2);
+	}
+}
+
+.card:hover{
+  animation: animservice 2s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal forwards;
+}
+
+@keyframes animservice {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
